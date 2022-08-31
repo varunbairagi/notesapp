@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+
+/* amol->6fd1114b9cmsh34d457748b46804p1315f8jsnf915aeb8aa1d */
+:root{
+    --primary1:#F54B64; 
+    --primary2:#F78361;
+    --secondary:#242a38;
+    --d_gray:#4e586e;
+    --whi:white;
+    --back:#202430;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--back);
+
+}
+.ip_div{
+    height: 12vh;
+    
+    display: flex;
+    background-color: var(--secondary);
+    justify-content: center;
+    align-items: center;
+
+}
+.ip_div input{
+    margin: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right,var(--primary1),var(--primary2));
+    border-radius: 10px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+/* input:hover{
+    background-image:linear-gradient(to right ,rgb(255, 143, 143),rgb(255, 143, 143)) ;
+} */
+input::placeholder{
+    color: var(--whi);
+}
+input:hover::placeholder{
+    
+    color: var(--d_gray);
+}
+.ip_div button{
+    font-size: 1.1rem;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+.ip_div button:hover{
+    background-color: #F54B64;
+    color: white;
+    font-size: 1.2rem;
+    
+}
+
+.cont{
+    padding-top: 40px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cont .show{
+    
+    width: 250px;
+    margin: 20px;
+    background-color: var(--d_gray);
+    border-radius: 5px;
+    box-shadow: rgb(155, 153, 153) .5px 1px 10px 2px ;
+    object-fit: contain;
+
+}
+.cont .show img{
+    /* padding: 5px; */
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 200px;
+    
+}
+.show:hover{
+    transform: scale(1.05);
+    transition: ease-in .2s;
+}
+.info{
+    padding: 5px;
+}
+.info h2{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1.7rem;
+}
+.info .extra{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    font-size: 15px;
+}
+.rep{
+    padding-top: 10px;
+}
+
